@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.julioa.ui.home.HomeFragment"
+        android:label="Pacientes"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_home_medico"
+        android:name="com.example.julioa.ui.home.HomeFragmentMedico"
+        android:label="Doctores"
+        tools:layout="@layout/fragment_home_medico" />
+    <fragment
+        android:id="@+id/nav_home_enfermedad"
+        android:name="com.example.julioa.ui.home.HomeFragmentEnfermedad"
+        android:label="Enfermedades"
+        tools:layout="@layout/fragment_home_enfermedad" />
+
+    <fragment
+        android:id="@+id/nav_home_citas"
+        android:name="com.example.julioa.ui.citas.CitaFragment"
+        android:label="CITAS"
+        tools:layout="@layout/fragment_cita" />
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.julioa.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.julioa.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_nuevo_paciente"
+        android:name="com.example.julioa.ui.home.NuevoPacienteFragment"
+        android:label="Nuevo Paciente"
+        tools:layout="@layout/fragment_nuevo_paciente" />
+
+    <fragment
+        android:id="@+id/nav_nuevo_medico"
+        android:name="com.example.julioa.ui.home.NuevoMedicoFragment"
+        android:label="Nuevo Doctor"
+        tools:layout="@layout/fragment_nuevo_medico" />
+
+    <fragment
+        android:id="@+id/nav_nuevo_enfermedad"
+        android:name="com.example.julioa.ui.home.NuevoEnfermedadFragment"
+        android:label="Nueva Enfermedad"
+        tools:layout="@layout/fragment_nuevo_enfermedad" />
+    <fragment
+        android:id="@+id/nav_nuevo_cita"
+        android:name="com.example.julioa.ui.citas.NuevoFragmentCita"
+        android:label="Nueva Cita"
+        tools:layout="@layout/fragment_nuevo_cita" />
+
+
+
+
+</navigation>
